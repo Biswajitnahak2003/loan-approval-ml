@@ -53,8 +53,19 @@ The dataset includes applicant info like income, employment, loan amount, intent
 ---
 
 ## 🥇 Current Best Model
+## 🔍 Model Comparison
 
-CatBoost performed the best among all baseline models.  
+| Model            | Accuracy | F1 Score | ROC-AUC |
+|------------------|----------|----------|---------|
+| Logistic Reg     | 0.899    | 0.55     | 0.88    |
+| KNN              | 0.928    | 0.71     | 0.87    |
+| Decision Tree    | 0.911    | 0.70     | 0.83    |
+| Random Forest    | 0.949    | 0.79     | 0.93    |
+| XGBoost          | 0.951    | 0.81     | 0.95    |
+| CatBoost         | 0.953    | 0.82     | 0.96    |
+| LightGBM         | 0.952    | 0.81     | 0.96    |
+
+CatBoost had the highest ROC-AUC and F1 Score among all models.
 Stacking/Voting and NN models I will be adding soon.
 
 ---
